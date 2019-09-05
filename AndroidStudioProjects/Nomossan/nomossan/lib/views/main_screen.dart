@@ -56,6 +56,9 @@ class MainScreen extends StatelessWidget {
           selectedItemColor: Colors.amber[800],
           onTap: screenState.changeScreenIndex,
         ),
+        floatingActionButton: FloatingActionButton(onPressed: () {
+          Navigator.pushNamed(context, '/shop_map');
+        }),
       );
     });
   }

@@ -4,7 +4,7 @@ class HistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('あほたれ'),
+      child: Text('ドリンク注文履歴がありません'),
     );
   }
 }

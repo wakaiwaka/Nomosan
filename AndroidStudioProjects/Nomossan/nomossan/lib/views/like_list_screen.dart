@@ -4,7 +4,7 @@ class LikeListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('ナイス！'),
+      child: Text('お気に入りがありません'),
     );
   }
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:nomossan/views/main_screen.dart';
 import 'models/screen_state.dart';
+import 'package:nomossan/views/home_screen.dart';
+import 'package:nomossan/views/shop_map.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +20,12 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.white,
         ),
         title: 'Flutter Demo',
-        home: MainScreen(),
+        routes: <String, WidgetBuilder>{
+          '/': (context) => new MainScreen(),
+          '/home_screen': (context) => new HomeScreen(),
+          '/shop_map': (context) => new MapsDemo(),
+        },
+        initialRoute: '/',
       ),
     );
   }
